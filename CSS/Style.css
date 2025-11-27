@@ -1,3 +1,43 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+
 /*Header Section*/
 
 
@@ -19,7 +59,7 @@
 .Search input{
     width: 600px;
     padding: 10px;
-    border: 1px solid black;v
+    border: 1px solid black;
     border-radius: 6px;
     font-size: 16px;
     align-items: center;
@@ -56,8 +96,6 @@ nav a:hover{
 
 
 
-
-
 /*Section header*/
 
 .Description{
@@ -65,6 +103,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .h2-CarParts{
@@ -72,6 +111,7 @@ nav a:hover{
     letter-spacing: 4px;
     text-decoration: underline 2px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .img-3{
@@ -141,6 +181,7 @@ main{
 
 
  input,textarea{
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px;
     font-size:16px;
 }
@@ -335,46 +376,29 @@ footer p{
 
     /* Form */
     
-    
-    
-    .section-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .section-form {
+        display: block;
         text-align: center;
         width: 100%;
-        gap:20px;
     }
 
-    .section-form form{
+    .section-form form {
         display: flex;
-        flex-direction: column;
-        gap: 15px;
         width: 90%;
         margin: 0 auto;
         text-align: center;
     }
 
-    .section-form p{
-        justify-content: left;
-        margin: 0;
-        width: 100%;
-        font-size: 14px;
+    .section-form p {
+        display: block;
+        align-items: left;
+        font-size: 12px;
+        text-align:left;
+        margin-top: 20px;
     }
 
-    input::placeholder {
-    text-align: center;
-}
-    input,
-    textarea{
-        display: block;
-        width: 100%;
-        box-sizing:border-box;
-        padding: 10px;
-        font-size: 16px;
-        text-align: left;
-        border-radius: 6px;
-        border: 1px solid black;
+    input, textarea {
+        text-align: center;
     }
 
     /* Footer */
@@ -409,9 +433,4 @@ footer p{
         text-align: center;
         width: 100%;
     }
-
 }
-
-
-
-
