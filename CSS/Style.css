@@ -348,8 +348,8 @@ footer p{
     }
 
     .section-form p{
-        margin-left: 0;
-        font-size: 14px;
+        justify-content: left;
+        font-size: 13px;
     }
 
     input,
@@ -391,3 +391,4 @@ footer p{
     }
 
 }
+
