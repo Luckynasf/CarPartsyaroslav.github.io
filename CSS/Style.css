@@ -336,42 +336,60 @@ footer p{
     /* Form */
     
     
-    .section-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        gap:20px;
-    }
+.section-form {
+    display: flex;             /* flex-контейнер */
+    flex-direction: column;    /* вертикально */
+    align-items: center;       /* горизонтальное центрирование */
+    width: 100%;
+    gap: 20px;                 /* расстояние между блоками */
+    padding: 10px;
+    box-sizing: border-box;
+}
 
-    .section-form form{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
+.section-form form {
+    display: flex;
+    flex-direction: column;    /* поля вертикально */
+    width: 100%;
+    max-width: 500px;          /* ограничение на большой экран */
+    gap: 15px;
+}
 
-    .section-form p{
-        justify-content: left;
-        margin: 0;
-        width: 100%;
-        font-size: 14px;
-    }
+.section-form label {
+    display: block;            /* подпись под каждым полем */
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
 
-    input,
-    textarea{
-        display: block;
-        width: 100%;
-        box-sizing:border-box;
-        padding: 10px;
-        font-size: 16px;
-        text-align: center;
-        border-radius: 6px;
-        border: 1px solid black;
-    }
+input,
+textarea {
+    display: block;            /* обязательно для Safari */
+    width: 100%;               /* занимает всю ширину родителя */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid black;
+    box-sizing: border-box;    /* padding не ломает ширину */
+    text-align: left;          /* текст в поле слева */
+}
+
+.Button-submit {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto;            /* центр кнопки */
+    background-color: rgb(158, 98, 255);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Button-submit:hover {
+    background-color: rgba(45, 202, 6, 0.856);
+}
 
     /* Footer */
     footer{
@@ -407,5 +425,6 @@ footer p{
     }
 
 }
+
 
 
