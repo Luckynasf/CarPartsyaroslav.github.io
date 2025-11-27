@@ -1,0 +1,454 @@
+/*Header Section*/
+
+
+.header-top{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap:15%;
+    border-bottom: 1px solid black;
+}
+
+/*Header - Logo*/
+.logo{
+    height: 60px;
+}
+
+/*Header - search*/
+.Search input{
+    width: 600px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Info{
+    font-size: 16px;
+    text-align: right;
+    padding-top: 10px;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+nav a:hover{
+    text-decoration: underline blue;
+    
+}
+
+
+/*Section header*/
+
+.Description{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-CarParts{
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-decoration: underline 2px;
+    text-align: center;
+}
+
+.img-3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 150px;
+
+
+}
+
+.img-3 img{
+    width: 350px;
+    height: 230px;
+    box-shadow:0px 0px 20px 0px black;
+    border-radius: 10px;
+
+
+}
+
+.img-3 img:active{
+    width: 360px;
+    height: 240px;
+}
+
+main{
+  background-image: url("../IMG/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Services Section Wrapper*/
+
+.services-grid-wrapper{
+    padding: 40px 20px;
+}
+/*Services Grid*/
+.services-grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/*Service card flip*/
+
+.service-card{
+    perspective: 1000px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition:transform 0.8s;
+    border-radius: 10px;
+}
+
+.service-card:hover .card-inner{
+    transform:rotateY(180deg);
+}
+
+/*Font and back Sides */
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Form Section*/
+.section-form{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.section-form form{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px;
+    justify-content: center;
+}
+
+
+ input,textarea{
+    padding: 10px;
+    font-size:16px;
+}
+
+.Button-submit{
+    background-color: rgb(158, 98, 255);
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Button-submit:hover{
+    background-color: rgba(45, 202, 6, 0.856);
+
+}
+
+.section-form p{
+    letter-spacing: 1px;
+    display: flex;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10%;
+
+}
+
+
+
+/*Footer*/
+footer{
+    display: flex;
+    background-color: rgb(240, 240, 240) ;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-top: 10px;
+    gap: 150px;
+}
+
+footer p{
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Fnav panel*/
+
+.footer-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-items: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+.footer-nav a:hover{
+    color: rgb(55, 71, 145);
+}
+
+.footer-info{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.footer-info img{
+    border-radius: 10px;
+    width: 60px;
+    box-shadow: 0px 0px 10px 0px rgba(69, 69, 238, 0.658);
+}
+
+
+/*Gmail*/
+.Gmail{
+    color: black;
+}
+.Gmail:hover{
+    color: red;
+}
+
+/*Student Name Last*/
+.studentName{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .Search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Search input {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Info {
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Header images section */
+    .img-3 {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-3 img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* Description block */
+    .Description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .h2-CarParts {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    /* Main background area */
+    main h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Services grid */
+    .services-grid-wrapper {
+        padding: 20px 10px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .card-inner {
+        height: 180px;
+    }
+
+    .card-back {
+        font-size: 18px;
+    }
+
+    /* Form */
+    .section-form {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .section-form form {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-form p {
+        
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    input, textarea {
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-info img {
+        width: 50px;
+    }
+
+    /* Student name */
+    .studentName {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
