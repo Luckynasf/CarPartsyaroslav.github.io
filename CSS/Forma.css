@@ -1,0 +1,338 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+
+/*Header Section*/
+
+
+.header-top{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap:15%;
+    border-bottom: 1px solid black;
+}
+
+/*Header - Logo*/
+.logo{
+    height: 60px;
+}
+
+/*Header - search*/
+.Search .search{
+    width: 600px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Info{
+    font-size: 16px;
+    text-align: right;
+    padding-top: 10px;
+        
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+nav a:hover{
+    text-decoration: underline blue;
+}
+
+
+
+
+/* Main describe*/
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-image: url(..//IMG/form.jpg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    height: 500px;
+    gap: 240px;
+
+}
+main h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.user-forma, input,select{
+    display:block;
+    justify-content: center;
+    width: 850px;
+}
+
+input, select{
+    border: 1px solid black;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+ .send{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 450px;
+    height: 45px;
+    margin-top: 20px;
+    background-color: rgb(215, 216, 216);
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+.send:hover{
+    background-color: rgb(3, 158, 3);
+    color: white;
+}
+
+
+
+
+/*Footer*/
+footer{
+    display: flex;
+    background-color: rgb(240, 240, 240) ;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-top: 10px;
+    gap: 150px;
+}
+
+footer p{
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Nav panel*/
+
+.footer-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-items: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+
+.footer-nav a:hover{
+    color: rgb(55, 71, 145);
+}
+
+.footer-info{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.footer-info img{
+    border-radius: 10px;
+    width: 60px;
+    box-shadow: 0px 0px 10px 0px rgba(69, 69, 238, 0.658);
+}
+
+
+/*Gmail*/
+.Gmail{
+    color: black;
+}
+.Gmail:hover{
+    color: red;
+}
+
+/*Student Name Last*/
+.studentName{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Phone Screen Size*/
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header-top {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Search .search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Search input{
+        width: 90%;
+        text-align: center;
+    }
+
+    .Info{
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav a{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Main block */
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .user-forma, input, select{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input, select{
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .send{
+        width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .main h1{
+        font-size:20px;
+        margin-bottom: 10px;
+    }
+
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-nav ul{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-info{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-info img{
+        width: 50px;
+        margin: 0 auto;
+    }
+
+    /* Student name */
+    .studentName{
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
