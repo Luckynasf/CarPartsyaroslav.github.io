@@ -329,6 +329,17 @@ footer p{
     }
 
 
+	   /* Sponsors */
+    .sponsers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sponsers img {
+        width: 150px;
+    }
+
+
     /* Footer */
     footer{
         flex-direction: column;
@@ -363,3 +374,4 @@ footer p{
     }
 
 }
+
